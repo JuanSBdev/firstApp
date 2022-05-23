@@ -3,6 +3,7 @@ import './App.css';
 import imageRickAndMorty from './img/rick-morty.png';
 import {useState} from 'react';
 import Characters from './components/Characters'
+
 function App() {
   const [characters, setCharacters] = useState(null);
 
@@ -18,7 +19,7 @@ function App() {
         {characters ? (
           <>
             <img src={logo} className="App-logo" alt="logo" />
-            <Characters characters={characters}/>
+            <Characters characters={characters} setCharacters={setCharacters} />
           </>
         ) : (
           <>
@@ -28,6 +29,7 @@ function App() {
         )}
       </header>
     </div>
+    
   );
 }
 
