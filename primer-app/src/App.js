@@ -18,7 +18,6 @@ function App() {
         <h1 className="title">Primer App</h1>
         {characters ? (
           <>
-            <img src={logo} className="App-logo" alt="logo" />
             <Characters characters={characters} setCharacters={setCharacters} />
           </>
         ) : (
