@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import imageRickAndMorty from './img/rick-morty.png';
 import {useState} from 'react';
